@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(180, 52%, 96%);
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    height: 156px;
+    background-image: url('./images/bg-header-desktop.svg');
+    background-color: hsl(180, 29%, 50%);
+}
+
+.container {
+    width: 100vw;
+    height: 100%;
+}
+
+
+.card {
+    width: 77%;
+    min-height: 15vh;
+    height: fit-content;
+    justify-content: space-between;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px hsl(180, 29%, 50%);
+    margin-top: 20px;
+    color: hsl(180, 29%, 50%);
+}
+
+.card-left {
+    justify-content: center;
+    align-items: center;
+    margin: 20px
+}
+
+.card-image {
+    margin: 0 20px;
+}
+
+.card-developer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    height: 100%;
+}
+
+.card-developer-header {
+    align-items: center;
+}
+
+.company {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.new {
+    color: white;
+    background-color: hsl(180, 29%, 50%);
+    border-radius: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.featured {
+    color: white;
+    background-color: hsl(180, 14%, 20%);
+    border-radius: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.position {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-developer-footer {
+    color: hsl(180, 8%, 52%);
+}
+
+.card-right {
+    font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px
+}
+
+.role,
+.level,
+.language {
+    background-color: hsl(180, 52%, 96%);
+    margin: 8px;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    header {
+        background-image: url('./images/bg-header-mobile.svg');
+    }
+
+    .card {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .card-left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-image .logo {
+        margin-top: -50px;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+
+
+    .card-right {
+        justify-content: flex-start;
+    }
+}
