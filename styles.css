@@ -90,10 +90,15 @@ header {
 .position {
     font-weight: bold;
     font-size: 20px;
+    color: hsl(180, 14%, 20%);
 }
 
 .card-developer-footer {
     color: hsl(180, 8%, 52%);
+}
+
+.card-developer-footer p {
+    margin-right: 20px;
 }
 
 .card-right {
@@ -138,15 +143,22 @@ header {
     .card {
         flex-direction: column;
         height: fit-content;
+        margin-top: 50px;
     }
 
     .card-left {
         flex-direction: column;
         align-items: flex-start;
+        border-bottom: 3px solid hsl(180, 8%, 52%);
+        margin: 0 20px;
+    }
+
+    .card-left * {
+        margin-bottom: 10px;
     }
 
     .card-image .logo {
-        margin-top: -50px;
+        margin-top: -25px;
         width: 50px;
         height: 50px;
         object-fit: cover;
@@ -155,5 +167,6 @@ header {
 
     .card-right {
         justify-content: flex-start;
+        margin: 20px
     }
 }

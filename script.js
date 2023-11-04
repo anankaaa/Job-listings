@@ -51,10 +51,21 @@ const createCard = () => {
       cardDeveloperHeader.appendChild(newParagraph);
       newParagraph.innerText = developer.new;
 
+      if (developer.new === true) {
+        newParagraph.innerText = "new!";
+      } else {
+        newParagraph.style.display = "none";
+      }
+
       let featured = document.createElement("p");
       featured.classList.add("featured");
       cardDeveloperHeader.appendChild(featured);
-      featured.innerText = developer.featured;
+
+      if (developer.featured === true) {
+        featured.innerText = "featured";
+      } else {
+        featured.style.display = "none";
+      }
 
       let position = document.createElement("p");
       position.classList.add("position");
